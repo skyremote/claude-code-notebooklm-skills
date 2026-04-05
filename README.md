@@ -1,44 +1,57 @@
-# Claude Code + NotebookLM Training
+# NavAIgate Claude Code Skills
 
-A hands-on workshop by [NavAIgate](https://navaigate.dev) showing how to combine Claude Code with Google NotebookLM for persistent AI memory, free content generation, and cost-effective research.
-
-## What's Included
-
-- **NotebookLM Skill** — Connect Claude Code to Google NotebookLM for persistent memory and content generation
-- **Session Brain Skill** — Auto-save session summaries to your AI Brain notebook at the end of every conversation
-- **Presenter Guide** — Step-by-step guide for delivering this training
-- **Presentation** — NavAIgate-branded Reveal.js slides with narrated audio
-
-## Quick Start
-
-1. Download the skill files from the `skills/` directory
-2. Drop them into Claude Code and say "Execute this skill"
-3. Follow the authentication steps
-4. Start using NotebookLM commands from within Claude
+Open-source Claude Code skills by [NavAIgate](https://navaigate.dev) that connect Claude to Google NotebookLM for persistent AI memory, free content generation, and deep research.
 
 ## Skills
 
-### NotebookLM Skill
-Full programmatic access to Google NotebookLM from Claude Code. Create notebooks, add sources, generate podcasts/videos/infographics, and query your knowledge base — all without leaving Claude.
+### NavAIgate NotebookLM Integration
 
-### Session Brain Skill
-End-of-session wrap-up that captures decisions, learnings, and context, then pushes a structured summary to your AI Brain notebook in NotebookLM for long-term semantic retrieval.
+**File:** [`skills/notebooklm-skill.md`](skills/notebooklm-skill.md)
 
-## Training Workshop
+Full programmatic access to Google NotebookLM from within Claude Code. Drop this skill file into Claude Code and say "Execute this skill" to get started.
 
-This repo accompanies a 1-hour training workshop. The presentation covers:
-- Why Claude needs persistent memory
-- Installing and authenticating the skills
-- Three use cases: Enrichment, Content Multiplication, AI Brain
-- Setting up Claude Co-work integration
+**What it does:**
+- Creates and manages NotebookLM notebooks
+- Adds sources from URLs, YouTube videos, PDFs, and local files
+- Runs deep web research (40-70 sources synthesised automatically)
+- Generates content: podcasts, videos, infographics, quizzes, flashcards, slide decks, reports
+- Downloads all generated assets locally
+- Chats with your knowledge base using semantic retrieval
 
-## Credits
+**Requirements:** Python 3.10+, Claude Code
 
-Based on concepts from [Jack Roberts'](https://youtube.com) video "Claude Code + NotebookLM = Infinite Memory", adapted and extended by NavAIgate.
+### NavAIgate Session Brain
+
+**File:** [`skills/session-brain-skill.md`](skills/session-brain-skill.md)
+
+End-of-session wrap-up skill that captures your decisions, learnings, and context, then pushes a structured summary to your AI Brain notebook in NotebookLM.
+
+**What it does:**
+- Reviews the entire conversation for key decisions and learnings
+- Saves memories locally using Claude Code's memory system
+- Writes a structured markdown session summary
+- Pushes the summary to your AI Brain notebook in NotebookLM
+- Over time, builds a semantic search engine over your entire Claude history
+
+**Trigger:** `/navaigate-session-brain`, "wrap up", "save this session", "end of session"
+
+**Requires:** NavAIgate NotebookLM Integration skill (above) installed and authenticated
+
+## Quick Start
+
+1. Download a skill `.md` file from the [`skills/`](skills/) directory
+2. Drop it into Claude Code
+3. Say **"Execute this skill"**
+4. Follow the authentication steps (sign into Google when prompted)
+5. Start using NotebookLM commands from within Claude
+
+## Training & Resources
+
+We deliver a 1-hour hands-on workshop covering these skills and three practical use cases. Visit [navaigate.dev/resources](https://navaigate.dev/resources) for the full training materials, interactive presentation, and video walkthrough.
 
 ## About NavAIgate
 
-[NavAIgate](https://navaigate.dev) is an AI-native consultancy helping businesses implement practical AI solutions. We offer training, advisory, and custom AI development.
+[NavAIgate](https://navaigate.dev) is an AI-native consultancy helping businesses implement practical AI solutions — training, advisory, and custom development.
 
 ---
 

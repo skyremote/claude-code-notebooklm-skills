@@ -1,3 +1,15 @@
 node_modules/
 .DS_Store
 *.mp4
+*.mp3
+*.png
+*.pptx
+*.js
+package*.json
+frames/
+audio/
+images/
+guides/
+index.html
+speaker-notes.md
+presenter-guide.md
